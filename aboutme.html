@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* ===== Global ===== */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa;
+    }
+
+    h1, h3, h5 {
+      font-weight: 600;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: linear-gradient(135deg, #1a1a1a, #343a40);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+    }
+
+    header p.lead {
+      font-size: 1.1rem;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    /* ===== Cards ===== */
+    .card {
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .card-body h3 {
+      border-left: 4px solid #0d6efd;
+      padding-left: 10px;
+      margin-bottom: 1rem;
+    }
+
+    /* ===== Sidebar Profile ===== */
+    aside img {
+      border: 4px solid #0d6efd;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    aside h4 {
+      margin-bottom: 0.2rem;
+      font-weight: 600;
+    }
+
+    aside p {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+
+    /* ===== Skills Badges ===== */
+    .badge {
+      font-size: 0.8rem;
+      padding: 0.5em 0.7em;
+      border-radius: 6px;
+    }
+
+    /* ===== Buttons ===== */
+    .btn {
+      border-radius: 30px;
+      padding: 0.5rem 1.2rem;
+      font-weight: 500;
+    }
+
+    .btn-primary {
+      background-color: #0d6efd;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #0b5ed7;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- Header -->
+  <header class="text-white text-center py-4">
+    <h1>ROCHE ARENAS PLANDO</h1>
+    <p class="lead">IT Instructor | Keep going.</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <div class="row">
+      <!-- Sidebar -->
+      <aside class="col-md-4 mb-4">
+        <div class="card shadow-sm mb-4">
+          <div class="card-body text-center">
+            <img src="/profimg.jpeg" alt="Profile Picture" class="rounded-circle">
+            <h4>Roche A. Plando</h4>
+            <p class="text-muted">IT Instructor</p>
+          </div>
+        </div>
+
+        <div class="card shadow-sm mb-4">
+          <div class="card-body">
+            <h5>Contact</h5>
+            <ul class="list-unstyled">
+              <li>Email: rplando.educ@gmail.com</li>
+              <li>Phone: +63 917 317 4816</li>
+              <li>Location: Talisay City, Cebu</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5>Skills</h5>
+            <span class="badge bg-primary me-1 mb-1">HTML</span>
+            <span class="badge bg-success me-1 mb-1">CSS</span>
+            <span class="badge bg-info me-1 mb-1">JavaScript</span>
+            <span class="badge bg-warning text-dark me-1 mb-1">Bootstrap</span>
+            <span class="badge bg-primary me-1 mb-1">ASP.Net (MVC)</span>
+            <span class="badge bg-success me-1 mb-1">PHP</span>
+            <span class="badge bg-info me-1 mb-1">Java</span>
+            <span class="badge bg-warning text-dark me-1 mb-1">SitecoreCMS</span>
+            <span class="badge bg-primary me-1 mb-1">Salesforce</span>
+            <span class="badge bg-success me-1 mb-1">Android</span>
+            <span class="badge bg-info me-1 mb-1">Kotlin</span>
+            <span class="badge bg-warning text-dark me-1 mb-1">MySQL</span>
+            <span class="badge bg-primary me-1 mb-1">MSSQL</span>
+            <span class="badge bg-info me-1 mb-1">Firebase</span>
+            <span class="badge bg-success me-1 mb-1">Kaggle</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Resume Sections -->
+      <section class="col-md-8">
+        <!-- About Me -->
+        <div class="card shadow-sm mb-4">
+          <div class="card-body">
+            <h3>About Me</h3>
+            <p>
+              I am a passionate IT educator and technology enthusiast with a strong background in programming, web development, and digital systems. I enjoy teaching complex concepts in a simple and practical way, helping students apply their knowledge to real-world problems. My goal is to inspire learners to become innovative, critical thinkers, and confident professionals in the IT field.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="card shadow-sm mb-4">
+          <div class="card-body">
+            <h3>Experience</h3>
+            <div class="mb-3">
+              <h5>IT Faculty - University of Cebu - Banilad</h5>
+              <p class="text-muted">Aug 2024 – Present</p>
+            </div>
+            <div>
+              <h5>MIS Supervisor - Author Solutions Phils., Inc.</h5>
+              <p class="text-muted">May 2011 – Present</p>
+            </div>
+            <div>
+              <h5>IT Specialist - Applications Developer - Lexmark Research and Development Corporation</h5>
+              <p class="text-muted">June 2010 – Dec 2010</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="card shadow-sm mb-4">
+          <div class="card-body">
+            <h3>Education</h3>
+            <p><strong>Masters in Information Technology</strong> - CIT-University (2024-present)</p>
+            <p><strong>Bachelor of Science in IT</strong> - CIT-University (2002–2009)</p>
+            <p><strong>High School</strong> - Don Sergio Osmena Sr. Memorial NHS (1998–2002)</p>
+          </div>
+        </div>
+
+        <!-- Contact / Links + Contact Form -->
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h3>Get in Touch</h3>
+            <p>Feel free to contact me for collaboration or opportunities!</p>
+
+            <!-- Contact Form -->
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Write your message..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Roche A. Plando. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
